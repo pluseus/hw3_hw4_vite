@@ -1,0 +1,549 @@
+/* 通用樣式 */
+.container {
+  max-width: 1320px; /* 容器寬度 */
+  /* 1296+12+12(padding寬度)=1320   */
+  margin: 0 auto; /* 自動水平邊距 */
+  padding-left: 12px; /* 左內邊距 */
+  padding-right: 12px; /* 右內邊距 */
+}
+.row {
+  display: flex;
+  flex-wrap: wrap; /* 彈性盒換行 */
+  margin-left: -12px; /* 行的左邊距 */
+  margin-right: -12px; /* 行的右邊距 */
+}
+.h-100{
+  height: 100%; /* 高度100% */
+}
+.w-100{
+  width: 100%; /* 寬度100% */
+}
+.col-1 {
+  padding-left: 12px;
+  padding-right: 12px; /* 列的左右內邊距 */
+  width: calc(100% / 12); /* 列寬度計算 */
+}
+.col-2 {
+  padding-left: 12px;
+  padding-right: 12px; /* 列的左右內邊距 */
+  width: calc(100% / 12 * 2); /* 列寬度計算 */
+}
+.col-3 {
+  padding-left: 12px;
+  padding-right: 12px; /* 列的左右內邊距 */
+  width: calc(100% / 12 * 3); /* 列寬度計算 */
+}
+.col-4 {
+  padding-left: 12px;
+  padding-right: 12px; /* 列的左右內邊距 */
+  width: calc(100% / 12 * 4); /* 列寬度計算 */
+}
+.col-5 {
+  padding-left: 12px;
+  padding-right: 12px; /* 列的左右內邊距 */
+  width: calc(100% / 12 * 5); /* 列寬度計算 */
+}
+.col-6 {
+  padding-left: 12px;
+  padding-right: 12px; /* 列的左右內邊距 */
+  width: calc(100% / 12 * 6); /* 列寬度計算 */
+}
+.col-7 {
+  padding-left: 12px;
+  padding-right: 12px; /* 列的左右內邊距 */
+  width: calc(100% / 12 * 7); /* 列寬度計算 */
+}
+.col-8 {
+  padding-left: 12px;
+  padding-right: 12px; /* 列的左右內邊距 */
+  width: calc(100% / 12 * 8); /* 列寬度計算 */
+}
+.col-9 {
+  padding-left: 12px;
+  padding-right: 12px; /* 列的左右內邊距 */
+  width: calc(100% / 12 * 9); /* 列寬度計算 */
+}
+.col-10 {
+  padding-left: 12px;
+  padding-right: 12px; /* 列的左右內邊距 */
+  width: calc(100% / 12 * 10); /* 列寬度計算 */
+}
+.col-11 {
+  padding-left: 12px;
+  padding-right: 12px; /* 列的左右內邊距 */
+  width: calc(100% / 12 * 11); /* 列寬度計算 */
+}
+.col-12 {
+  padding-left: 12px;
+  padding-right: 12px; /* 列的左右內邊距 */
+  width: calc(100% / 12 * 12); /* 列寬度計算 */
+}
+.flex-column {
+  flex-direction: column; /* 中等裝置以下的彈性盒模型為垂直排列 */
+  }
+.flex-nowrap {
+  flex-wrap: nowrap; /* 中等裝置以下的彈性盒模型不換行 */
+  }
+@media (max-width: 767px) {
+  .row {
+    margin-left: -6px;
+    margin-right: -6px;
+  }
+  .col-md-1 {
+    padding-left: 6px;
+    /* gutter 的寬度是12px,所以設定padding - left 是一半的寬度 */
+    padding-right: 6px;
+    width: calc(100% / 4);
+  }
+  .col-md-2 {
+    padding-left: 6px;
+    padding-right: 6px;
+    width: calc(100% / 4 * 2);
+  }
+  .col-md-3 {
+    padding-left: 6px;
+    padding-right: 6px;
+    width: calc(100% / 4 * 3);
+  }
+  .col-md-4 {
+    padding-left: 6px;
+    padding-right: 6px;
+    width: calc(100% / 4 * 4);
+  }
+  .flex-md-column {
+    flex-direction: column; /* 中等裝置以下的彈性盒模型為垂直排列 */
+  }
+  .flex-md-nowrap {
+    flex-wrap: nowrap; /* 中等裝置以下的彈性盒模型不換行 */
+  }
+  .gap-md-4 {
+    gap: 4px; /* 中等裝置以下的元素間距 */
+  }
+  .gap-md-8 {
+    gap: 8px; /* 中等裝置以下的元素間距 */
+  }
+}
+
+@media (max-width: 767px) {
+  .overflow-x-md-auto {
+    overflow-x: auto; /* 水平滾動條 */
+  }
+}
+
+.d-flex {
+  display: flex; /* 彈性盒模型 */
+}
+.d-none {
+  display: none; /* 不顯示 */
+}
+@media (max-width: 767px) {
+  .d-md-flex {
+    display: flex; 
+  }
+  .d-md-none {
+    display: none; 
+  }
+  .d-md-block {
+    display: block; /* 中等裝置以下顯示 */
+  }
+}
+@media (max-width: 576px) {
+  .d-sm-flex {
+    display: flex; /* 行動端彈性盒模型 */
+  }
+  .d-sm-none {
+    display: none; /* 行動端不顯示 */
+  }
+  .d-sm-block {
+    display: block; /* 行動端顯示 */
+  }
+}
+.justify-between {
+  justify-content: space-between; /* 兩端對齊 */
+}
+.justify-center {
+  justify-content: center; /* 水平居中 */
+}
+.align-center {
+  align-items: center; /* 垂直居中 */
+}
+.flex-wrap {
+  flex-wrap: wrap; /* 彈性盒換行 */
+}
+.gap-4 {
+  gap: 4px; /* 元素間距 */
+}
+.gap-8 {
+  gap: 8px; /* 元素間距 */
+}
+.display-1{
+  font-size: 64px; /* 大字體大小 */
+  line-height: 1.2; /* 大字行高 */
+  font-weight: 700; /* 大字體粗細 */
+
+}
+.display-2{
+  font-size: 40px; /* 大字體大小 */
+  line-height: 1.2; /* 大字行高 */
+  font-weight: 700; /* 大字體粗細 */
+
+}
+.h1 {
+  font-size: 40px; /* 標題字體大小 */
+  line-height: 1.2; /* 標題行高 */
+  font-weight: 700; /* 標題字體粗細 */
+}
+.h2 {
+  font-size: 32px; /* 標題字體大小 */
+  line-height: 1.2; /* 標題行高 */
+  font-weight: 700; /* 標題字體粗細 */
+}
+
+.h3 {
+  font-size: 28px; /* 標題字體大小 */
+  line-height: 1.2; /* 標題行高 */
+  font-weight: 700; /* 標題字體粗細 */
+}
+.h4 {
+  font-size: 24px; /* 標題字體大小 */
+  line-height: 1.2; /* 標題行高 */
+  font-weight: 700; /* 標題字體粗細 */
+}
+.h5 {
+  font-size: 20px; /* 標題字體大小 */
+  line-height: 1.2; /* 標題行高 */
+  font-weight: 700; /* 標題字體粗細 */
+}
+.h6 {
+  font-size: 16px; /* 標題字體大小 */
+  line-height: 1.2; /* 標題行高 */
+  font-weight: 700; /* 標題字體粗細 */
+}
+.md{
+  font-size: 16px; /* 中等字體大小 */
+  line-height: 1.5; /* 中等字行高 */
+  font-weight: 400; /* 中等字體粗細 */
+
+}
+@media (max-width: 767px) {
+  .h1-md {
+    font-size: 40px; /* 行動端標題字體大小 */
+  }
+  .h2-md {
+    font-size: 32px; /* 行動端標題字體大小 */
+  }
+
+  .h3-md {
+    font-size: 28px; /* 行動端標題字體大小 */
+  }
+  .h4-md {
+    font-size: 24px; /* 行動端標題字體大小 */
+  }
+  .h5-md {
+    font-size: 20px; /* 行動端標題字體大小 */
+  }
+  .h6-md {
+    font-size: 16px; /* 行動端標題字體大小 */
+  }
+}
+@media (max-width: 576px) {
+  .display-2-sm{
+    font-size: 40px; /* 大字體大小 */
+    line-height: 1.2; /* 大字行高 */
+    font-weight: 700; /* 大字體粗細 */
+  }
+  .h3-sm {
+    font-size: 28px; /* 行動端標題字體大小 */
+  }
+  .h4-sm {
+    font-size: 24px; /* 行動端標題字體大小 */
+  }
+  .h5-sm {
+    font-size: 20px; /* 行動端標題字體大小 */
+  }
+  .h6-sm {
+    font-size: 16px; /* 行動端標題字體大小 */
+  }
+}
+.text-sm {
+  font-size: 14px; /* 小字體大小 */
+  line-height: 1.5; /* 小字行高 */
+  font-weight: 500; /* 小字體粗細 */
+}
+.text-lg{
+  font-size: 20px; /* 大字體大小 */
+}
+@media (max-width: 767px) {
+  .text-md-md {
+    font-size: 16px; /* 中等字體大小 */
+  }
+}
+.text-white {
+  color: $neutral-0;/* 白色文字 */
+}
+.text-neutral-600 {
+  color: $neutral-600; /* 中性色600文字 */
+}
+.text-neutral-500 {
+  color: $neutral-500; /* 中性色500文字 */
+}
+.text-primary-400 {
+  color: $primary-400; /* 主要顏色文字 */
+}
+.text-primary-300 {
+  color: $primary-300; /* 主要顏色文字 */
+}
+.text-neutral-300 {
+  color: $neutral-300; /* 中性色300文字 */
+}
+.bg-primary-200 {
+  background-color: $primary-200; /* 主要背景顏色 */
+}
+.bg-primary-100 {
+  background-color: $primary-100; /* 主要背景顏色 */
+}
+.bg-neutral-100 {
+  background-color: $neutral-100; /* 中性色100背景顏色 */
+}
+@media (max-width: 576px) {
+  .bg-sm-white {
+    background-color: white
+  }
+  
+}
+.px-12 {
+  padding-right: 12px; /* 右內邊距 */
+  padding-left: 12px; /* 左內邊距 */
+}
+.px-24{
+  padding-right: 24px;
+  padding-left: 24px;
+}
+.px-80{
+  padding-right: 80px; /* 右內邊距 */
+  padding-left: 80px; /* 左內邊距 */
+}
+.py-120{
+  padding-top: 120px; /* 上邊距 */
+  padding-bottom: 120px; /* 下邊距 */
+}
+.py-64 {
+  padding-top: 64px; /* 上邊距 */
+  padding-bottom: 64px; /* 下邊距 */
+}
+.py-48 {
+  padding-top: 48px; /* 上邊距 */
+
+  padding-bottom: 48px; /* 下邊距 */
+}
+.py-16 {
+  padding-top: 16px; /* 上邊距 */
+  padding-bottom: 16px; /* 下邊距 */
+}
+.py-12 {
+  padding-top: 12px; /* 上邊距 */
+  padding-bottom: 12px; /* 下邊距 */
+}
+@media (max-width: 576px) {
+  .py-sm-12 {
+    padding-bottom: 12px;
+    padding-top: 12px;
+  }
+}
+.p-32 {
+  padding: 32px; /* 內邊距 */
+}
+.p-24{
+  padding-left: 24px; /* 左內邊距 */
+  padding-right: 24px; /* 右內邊距 */
+}
+.p-12 {
+  padding: 12px; /* 內邊距 */
+}
+.pb-48 {
+  padding-bottom: 48px; /* 下內邊距 */
+}
+.pb-24 {
+  padding-bottom: 24px; /* 下內邊距 */
+}
+.py-24 {
+  padding-top: 24px; /* 上邊距 */
+  padding-bottom: 24px; /* 下邊距 */
+}
+.py-8 {
+  padding-top: 8px; /* 上邊距 */
+  padding-bottom: 8px; /* 下邊距 */
+}
+.pr-8 {
+  padding-right: 8px; /* 右邊距 */
+}
+.pe-8 {
+  padding-right: 8px; /* 右邊距 */
+}
+@media (max-width: 767px) {
+  .px-md-12 {
+    padding-left: 12px; /* 左內邊距 */
+    padding-right: 12px; /* 右內邊距 */
+  }
+  .px-md-16 {
+    padding-left: 16px; /* 左內邊距 */
+    padding-right: 16px; /* 右內邊距 */
+  }
+  .py-md-32 {
+    padding-top: 32px; /* 上邊距 */
+    padding-bottom: 32px; /* 下邊距 */
+  }
+  .py-md-24{
+    padding-top: 24px; /* 上邊距 */
+    padding-bottom: 24px; /* 下邊距 */
+  }
+    .py-md-16 {
+    padding-top: 16px; /* 上邊距 */
+    padding-bottom: 16px; /* 下邊距 */
+  }
+    .py-md-0 {
+    padding-top: 0px; /* 上邊距 */
+    padding-bottom: 0px; /* 下邊距 */
+  }
+  .pb-md-32 {
+    padding-bottom: 32px; /* 下邊距 */
+  }
+  .p-md-24 {
+    padding: 24px; /* 內邊距 */
+  }
+}
+
+
+@media (max-width: 576px) {
+  .px-sm-12 {
+    padding-left: 12px; /* 左內邊距 */
+    padding-right: 12px; /* 右內邊距 */
+  }
+  .py-sm-32 {
+    padding-top: 32px; /* 上邊距 */
+    padding-bottom: 32px; /* 下邊距 */
+  }
+  .pb-sm-32 {
+    padding-bottom: 32px; /* 下邊距 */
+  }
+  .p-md-24 {
+    padding: 24px; /* 內邊距 */
+  }
+}
+.mb-64 {
+  margin-bottom: 64px; /* 下邊距 */
+}
+.mb-48 {
+  margin-bottom: 48px; /* 下邊距 */
+}
+.mb-40 {
+  margin-bottom: 40px; /* 下邊距 */
+}
+.mb-32 {
+  margin-bottom: 32px; /* 下邊距 */
+}
+.mb-24 {
+  margin-bottom: 24px; /* 下邊距 */
+}
+.mb-16 {
+  margin-bottom: 16px; /* 下邊距 */
+}
+.mb-12 {
+  margin-bottom: 12px; /* 下邊距 */
+}
+
+.mb-8 {
+  margin-bottom: 8px; /* 下邊距 */
+}
+.mb-4 {
+  margin-bottom: 4px; /* 下邊距 */
+}
+@media (max-width: 767px) {
+  .mb-md-0 {
+    margin-bottom: 0; /* 行動端下邊距 */
+    }
+  .mb-md-4 {
+    margin-bottom: 4px; /* 行動端下邊距 */
+  }
+  .mb-md-8 {
+    margin-bottom: 8px; /* 行動端下邊距 */
+  }
+  .mb-md-12 {
+    margin-bottom: 12px; /* 行動端下邊距 */
+  }
+  .mb-md-16 {
+    margin-bottom: 16px; /* 行動端下邊距 */
+  }
+  .mb-md-24 {
+    margin-bottom: 24px; /* 行動端下邊距 */
+  }
+  .mb-md-32 {
+    margin-bottom: 32px; /* 行動端下邊距 */
+  }
+}
+@media(max-width: 576px) {
+  .mb-sm-0 {
+    margin-bottom: 0; /* 行動端下邊距 */
+  }
+  .mb-sm-4 {
+    margin-bottom: 4px; /* 行動端下邊距 */
+  }
+  .mb-sm-8 {
+    margin-bottom: 8px; /* 行動端下邊距 */
+  }
+  .mb-sm-12 {
+    margin-bottom: 12px; /* 行動端下邊距 */
+  }
+  .mb-sm-16 {
+    margin-bottom: 16px; /* 行動端下邊距 */
+  }
+}
+.me-2 {
+  margin-right: 2px; /* 右邊距 */
+}
+.me-8 {
+  margin-right: 8px; /* 右邊距 */
+}
+.me-12 {
+  margin-right: 12px; /* 右邊距 */
+}
+.me-24 {
+  margin-right: 24px; /* 右邊距 */
+}
+.me-40 {
+    margin-right: 40px; /* 右邊距 */
+}
+
+.me-48 {
+  margin-right: 48px; /* 右邊距 */
+}
+.me-auto {
+  margin-right: auto; /* 自動右邊距 */
+}
+@media (max-width: 576px) {
+  .me-sm-0 {
+    margin-right: 0; /* 行動端右邊距 */
+  }
+  .me-sm-16 {
+    margin-right: 16px; /* 行動端右邊距 */
+  }
+  .me-sm-4 {
+    margin-right: 4px; /* 行動端右邊距 */
+  }
+  .me-sm-8 {
+    margin-right: 8px; /* 行動端右邊距 */
+  }
+}
+// radius
+.radius-xs{
+  border-radius: 2px; /* 小圓角 */
+}
+.radius-sm {
+  border-radius: 4px; /* 小圓角 */
+}
+.radius-md{
+  border-radius: 12px; /* 中等圓角 */
+}
+.radius-rounded {
+  border-radius: 1000px; /* 大圓角 */
+}

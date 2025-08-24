@@ -1,0 +1,25 @@
+.btn {
+  border-radius: 4px; /* 按鈕圓角 */
+  padding: 12px 24px; /* 按鈕內邊距 */
+  font-size: 16px; /* 按鈕字體大小 */
+  line-height: 1.5; /* 按鈕行高 */
+  font-weight: 500; /* 按鈕字體粗細 */
+  cursor: pointer; /* 鼠標指針樣式 */
+  border: none; /* 按鈕邊框 */
+  background-color: transparent; /* 按鈕背景顏色 */
+}
+@media (max-width: 576px) {
+  .btn{
+    padding: 8px 16px; /* 行動端按鈕內邊距 */
+  }
+}
+.btn-dark {
+  background-color: $neutral-900;
+  color: $neutral-0; /* 按鈕文字顏色 */
+}
+.btn-light {
+  border:1px solid $neutral-900;
+}
+.btn-primary{
+  background-color: $primary-300;
+}

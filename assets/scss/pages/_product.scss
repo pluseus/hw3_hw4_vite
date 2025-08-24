@@ -1,0 +1,69 @@
+/* 產品圖片 */
+.product-row{
+    display: flex;
+    flex-wrap: wrap;    /* 產品行彈性盒換行 */
+    margin-right: -4px; /* 產品行的右邊距 */
+    margin-left: -4px; /* 產品行的左邊距 */
+}
+.product-col{
+    padding-left: 4px;
+    padding-right: 4px; /* 產品列的左右內邊距 */
+    width: calc(100% / 12 * 6); /* 產品列寬度計算 */
+}
+
+
+
+/* 產品描述 */
+.del-price{
+    font-size: 14px; /* 刪除價格的字體大小 */
+    font-weight: 400; /* 刪除價格的字體粗細 */
+    color: var(--neutral-500); /* 刪除價格的顏色 */
+    padding-left: 8px; /* 刪除價格的左邊距 */
+}
+/* 產品顏色 */
+.product-color{
+    width: 64px;
+    text-align: center; /* 產品顏色的寬度和文字對齊 */
+    color: var(--neutral-600); /* 產品顏色的文字顏色 */
+
+}
+/* 產品尺寸 */
+.btn-product-size{
+    border: 1px solid var(--neutral-300); /* 產品此吋按鈕的邊框 */
+    width: 160px; /* 產品此吋按鈕的寬度 */
+}
+.btn-product-size.active,
+.btn-product-size:hover{
+    border-color: var(--primary-900); /* 產品此吋按鈕的背景色 */
+}
+.text-danger{
+    color: var(--danger-300); 
+}
+.btn-light{
+    border: 1px solid var(--neutral-900); /* 淺色按鈕的邊框 */
+}
+.btn-dark{
+    background-color: var(--neutral-900); /* 深色按鈕的背景色 */
+    color: var(--neutral-0); /* 深色按鈕的文字顏色 */
+}
+/* 收藏/試穿 */
+.product-action{
+    display: flex;
+    gap: 8px; /* 產品操作按鈕間距 */
+}
+.product-action .btn{
+width: 50%; /* 產品操作按鈕的寬度 */
+}
+.product-action .bi{
+    padding-right: 8px; 
+}
+/* 產品資訊 */
+.product-info-title{
+ font-weight: 500; /* 產品資訊標題的字體粗細 */
+}
+.product-info-item p{
+color: var(--neutral-600); /* 產品資訊項目的文字顏色 */
+}
+.product-info-item{
+    border-bottom: 1px solid var(--neutral-300); /* 產品資訊項目的底部邊框 */
+}

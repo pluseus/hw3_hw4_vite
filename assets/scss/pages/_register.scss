@@ -1,0 +1,54 @@
+.register{
+    &-hero{
+        background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/banner-sm.png?raw=true');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 589px;
+        @media (max-width: 576px) {
+            min-height: 240px;
+            
+        }
+        h1{
+            padding-left: 40px;
+            padding-top: 71px;
+            padding-bottom: 15px;
+        }
+        h3{
+            padding-left: 125px;
+        }
+        @media (max-width: 576px) {
+            h1{
+                padding-bottom: 9px;
+                padding-top: 24px;
+                font-size: 32px;
+                font-weight: 800;
+            }
+             h1,h3{
+            padding-left: 24px;
+            
+        }
+
+        }
+    }
+    &-form{
+        display: flex;
+        width: 100%;
+        text-align: center;
+        a{
+            width: 50%;
+        }
+        &-neutral300Border{
+            border-bottom: $neutral-300 solid 2px;
+        }
+        &-neutral900Border{
+            border-bottom: $neutral-900 solid 2px;
+        }
+    }
+
+    &-platform{
+        width: 100%;
+        border: $neutral-300 solid 1px;
+        background-color: white;
+    }
+}

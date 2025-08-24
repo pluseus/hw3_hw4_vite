@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <!-- 先觀察設計稿 -->
+    <!-- main -->
+    <main>
+      <div class="py-64 py-md-0">
+        <div class="container">
+          <div class="row">
+            <div class="register col-5 col-md-4">
+              <div class="register-hero radius-sm">
+                <h1 class="display-1 text-white">URBNSTEP</h1>
+                <h3 class="h4 h6-md text-neutral-500">
+                  Your Step, Your Statement
+                </h3>
+              </div>
+            </div>
+            <div class="col-7 col-md-4 bg-neutral-100 bg-sm-white">
+              <div
+                class="register-content d-flex flex-column align-center radius-sm py-120 py-md-32 px-80 px-md-12"
+              >
+                <h2 class="h3 mb-32">歡迎!</h2>
+                <div class="register-form mb-32">
+                  <a href="#" class="register-form-neutral900Border">登入</a>
+                  <a href="#" class="register-form-neutral300Border">註冊</a>
+                </div>
+                <div class="register-platforms d-flex flex-column gap-8 w-100">
+                  <a
+                    href="#"
+                    class="md d-flex align-center py-12 register-platform radius-xs bg-neutral-300 px-12"
+                  >
+                    <i class="me-12"
+                      ><img
+                        class="display-inline"
+                        src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/c07852c7f1c21031d6380bb4398e2163f71122c9/2025-week3-4/facebook.svg"
+                        alt=""
+                    /></i>
+                    Facebook 註冊
+                  </a>
+                  <a
+                    href="#"
+                    class="md d-flex align-center py-12 register-platform radius-xs px-12"
+                  >
+                    <i class="me-12"
+                      ><img
+                        class="display-inline"
+                        src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/c07852c7f1c21031d6380bb4398e2163f71122c9/2025-week3-4/apple.svg"
+                        alt=""
+                    /></i>
+                    Apple 註冊 </a
+                  ><a
+                    href="#"
+                    class="md d-flex align-center py-12 register-platform radius-xs px-12"
+                  >
+                    <i class="me-12"
+                      ><img
+                        class="display-inline"
+                        src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/c07852c7f1c21031d6380bb4398e2163f71122c9/2025-week3-4/google.svg"
+                        alt=""
+                    /></i>
+                    Google 註冊
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- footer -->
+    <footer class="bg-neutral-100 py-64 py-sm-32">
+      <div class="container">
+        <div class="row justify-center">
+          <div class="col-8 col-md-4">
+            <nav class="d-flex align-center justify-between d-sm-block mb-24">
+              <a href="#" class="mb-sm-8">
+                <img
+                  src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/e1ad10bd2260f80c5f65be5bfc5042790a261115/2025-week1/logo.svg"
+                  alt="logo"
+                />
+              </a>
+              <ul class="d-flex d-sm-block px-sm-12">
+                <li class="me-40 mb-sm-4 me-sm-0">
+                  <a href="products.html" class="py-12">商品列表</a>
+                </li>
+                <li class="me-40">
+                  <a href="story.html" class="py-12">品牌故事</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="copyright">
+              <p class="mb-4">Copyright ©2025 URBNSTYLE</p>
+              <p>All Rights Reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- script -->
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

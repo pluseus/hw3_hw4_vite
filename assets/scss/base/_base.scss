@@ -1,0 +1,27 @@
+/* 標籤基本樣式的設定,
+減少計算的步驟 */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+img {
+  display: block; /* 讓圖片不受 inline 空白影響 */
+  margin: 0 auto; /* 水平置中（搭配 block） */
+  vertical-align: middle; /* 圖片垂直對齊中間 */
+  max-width: 100%; /* 圖片最大寬度 */
+  height: auto; /* 避免圖片變形 */
+}
+a {
+  display: block;
+  text-decoration: none;
+  font-weight: 500; /* 字體粗細 */
+  color: $neutral-900; /* 文字顏色 */
+}
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  font-style: 16px;
+  line-height: 1.6; /* 行高 */
+  letter-spacing: 0.05em; /* 字母間距 */
+  color: $neutral-900
+}

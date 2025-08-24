@@ -1,0 +1,17 @@
+.copyright {
+padding-top: 32px; /* 上邊距 */
+text-align: center;
+border-top: 1px solid $neutral-300; /* 上邊框 */
+font-size: 14px; /* 字體大小 */
+color: $neutral-600; /* 文字顏色 */
+
+} 
+.section-lined {
+  border-bottom: 1px solid $neutral-300; /* 底部邊框 */
+}
+.column-direction {
+  flex-direction: column; /* 列方向 */
+}
+.footer {
+  text-align: center;
+}

@@ -1,0 +1,11 @@
+.category .active{
+    color: $primary-400; /* 活動類別的顏色 */
+}
+.page-item .btn{
+    border-radius: 0;
+    padding: 8px 15px; /* 內邊距 */
+}
+.page-item .active{
+    background-color: $primary-300; /* 活動頁面的背景色 */
+    font-weight: 500; /* 活動頁面的字體粗細 */
+    }

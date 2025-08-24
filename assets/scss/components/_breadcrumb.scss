@@ -1,0 +1,21 @@
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "/"; /* 分隔符號 */
+  padding: 0 12px; /* 分隔符號的左右間距 */
+  color: $neutral-300; /* 分隔符號顏色 */
+  font-weight: 700;
+}
+.breadcrumb-item {
+  display: flex;
+  font-weight: 500;
+}
+.breadcrumb-link {
+  color: $neutral-600; /* 連結顏色 */
+}
+@media(max-width: 767px) {
+  .breadcrumb-item + .breadcrumb-item::before {
+    padding: 0 8px;
+  }
+  .breadcrumb-item {
+  font-size: 14px; /* 行動端字體大小 */
+  }
+}
